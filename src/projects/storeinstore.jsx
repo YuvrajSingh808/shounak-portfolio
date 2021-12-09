@@ -13,7 +13,7 @@ import hifi3 from '../assets/projects/storeinstore/hifi3.png';
 import hifi4 from '../assets/projects/storeinstore/hifi4.png';
 import hifi5 from '../assets/projects/storeinstore/hifi5.png';
 import { BsFillCompassFill } from 'react-icons/bs';
-import {HiAdjustments} from 'react-icons/hi';
+import { HiAdjustments } from 'react-icons/hi';
 import { FaShoppingCart } from 'react-icons/fa';
 import { AiFillEye, AiFillStar } from 'react-icons/ai';
 import { useEffect } from 'react';
@@ -24,12 +24,13 @@ import { ListElement } from '../Components/ListElement';
 import { NextUpTile } from '../Components/NextUpTile';
 import { ProjectBrief } from '../Components/ProjectBrief';
 import Navbar from '../Components/navbar';
+import { BsArrowRight } from 'react-icons/bs';
 
 export default function StoreInStore() {
     useEffect(() => {
         window.scrollTo(0, 0);
         document.body.style.background = null;
-      }, []);
+    }, []);
     return (
         <div>
             <Navbar />
@@ -46,12 +47,12 @@ export default function StoreInStore() {
                 <SubHeading text="The design process" />
                 <Information text="
         Since we had just 3 months to provide a working prototype to our company partners, we required a highly efficient design process and also be vigilant about our time invested in each part of the process." />
-                <p className="leading-loose">
+                <p className="leading-10">
                     We chose to implement key features of the <span className="font-bold">Double-Diamond Theory</span> - Discovery, Definition, Ideation, and Implementation, while being encouraged, by our mentors to adopt a Lean Startup mechanism in an Agile framework.
                 </p>
                 <img src={designProcess} alt="" srcset="" className="my-8" />
                 <Heading text="Understanding The Problem Space" />
-                <p className="leading-loose">
+                <p className="leading-10">
                     The first three of weeks of the timeline were reserved entirely for research. To find out possible directions to take and questions to answer, we conducted a <span className="font-bold">speed storming session</span>, based purely on first impressions of the problem statement. We used it further to find patterns and identify possible <span className="font-bold">stakeholders</span>.
                 </p>
                 <img src={problemSpace} className="mx-auto my-8" alt="" srcset=" " />
@@ -74,7 +75,7 @@ export default function StoreInStore() {
             </div>
             <div className="mx-15p">
                 <Heading text="Moving Towards The Solution" />
-                <p className="leading-loose">
+                <p className="leading-10">
                     Once we understood the pain points of the stakeholders involved in the problem space, we moved towards brainstorming possible solutions that could address some of these issues. We adopted the Lean Startup methodology to <span className="font-bold">fail fast</span> which meant getting out of the planning phase to the testing phase, by creating <span className="font-bold">Minimum Viable Experiments or MVEs.</span>
                 </p>
                 <SubHeading text="how might we..." />
@@ -91,19 +92,22 @@ export default function StoreInStore() {
                 <Information text="Our failed experiment made us realize that users are so used to super-fast “express” deliveries that any radical change in that experience or delay would be met with criticism. " />
                 <Information text="Our next experiment tried to tackle other pain points that existed for local businesses. One that could make efficient use of the extra space that stores had while helping smaller businesses find an appropriate opportunity to grow." />
                 <p className="mt-12">The key idea was simple.</p>
-                <p className="leading-loose text-xl mb-8 font-bold">A platform for local store owners and local producers that helped them find their Ideal Match. </p>
+                <p className="leading-10 text-xl mb-8 font-bold">A platform for local store owners and local producers that helped them find their Ideal Match. </p>
                 <Information text="We designed a simple landing page experiment for this and ran an Instagram ad campaign targeting small businesses and store owners." />
                 <img src={landingPage} className="w-full my-8" alt="" srcset=" " />
-                <div className="flex flex-row-reverse">
-                    <button className="px-8 bg-black text-white py-1.5 rounded-lg hover:bg-orange-400 transform hover:scale-105">
-                        Visit site
-                    </button>
+                <div className="flex flex-row-reverse mb-8">
+                    <a href="https://storeinstore.eu/" target="_blank">
+                        <button className="px-8 flex items-center space-x-4 bg-black text-white py-1.5 rounded-lg hover:bg-orange-400 transform hover:scale-105">
+                            <p>Visit site</p>
+                            <BsArrowRight />
+                        </button>
+                    </a>
                 </div>
                 <Information text="As the scope of the experiment was small, we asked the visitors relevant questions regarding their products and stores and dId manual matching of businesses behind the scenes based on key metrics like similarity of themes and the space available. Finally, we sent them a list of relevant businesses by email. " />
                 <Information text="Our concept tested successfully once we got a couple of businesses interested in forming a partnership. " />
 
                 <Heading text="Next Step - MVP" />
-                <p className="leading-loose">After validating our problem space and hypothesis, we narrowed down on the most necessary features for the product to make a <span className="font-bold" >viable, feasible, and desirable </span> solution through continuous iterations of interviewing, prototyping and testing.</p>
+                <p className="leading-10">After validating our problem space and hypothesis, we narrowed down on the most necessary features for the product to make a <span className="font-bold" >viable, feasible, and desirable </span> solution through continuous iterations of interviewing, prototyping and testing.</p>
                 <SubHeading text="SKETCHES" />
                 <img src={lofi} className="w-full my-8" alt="" srcset=" " />
             </div>
@@ -136,7 +140,7 @@ export default function StoreInStore() {
                     </div>
                     <img src={hifi3} className="w-full my-8" alt="" srcset=" " />
                 </div>
-                
+
                 <div className="w-full">
                     <div className="flex text-projectOrange space-x-4 items-center">
                         <span className="font-bold uppercase text-projectOrange">Recommendations</span>
@@ -144,7 +148,7 @@ export default function StoreInStore() {
                     </div>
                     <img src={hifi4} className="w-full my-8" alt="" srcset=" " />
                 </div>
-                
+
                 <div className="w-full">
                     <div className="flex text-projectOrange space-x-4 items-center">
                         <span className="font-bold uppercase text-projectOrange">Recommendations</span>

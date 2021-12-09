@@ -4,12 +4,12 @@ import fieldStudy from '../assets/projects/dmrc/fieldstudy.png';
 import dataAnalysis from '../assets/projects/dmrc/dataAnalysis.png';
 import initialIdea from '../assets/projects/dmrc/initialIdea.png';
 import lofi from '../assets/projects/dmrc/lofi.png';
-import search1 from '../assets/projects/dmrc/search1.png';
-import search2 from '../assets/projects/dmrc/search2.png';
+import search1 from '../assets/projects/dmrc/search1.gif';
+import search2 from '../assets/projects/dmrc/search2.gif';
 import menu from '../assets/projects/dmrc/menu.png';
 import nearestStation from '../assets/projects/dmrc/nearestStation.png';
 import stationInfo from '../assets/projects/dmrc/stationInfo.png';
-import metroMap from '../assets/projects/dmrc/metroMap.png';
+import metroMap from '../assets/projects/dmrc/metroMap.gif';
 import recharge from '../assets/projects/dmrc/recharge.png';
 import tarun from '../assets/projects/optimize/tarun.svg';
 import shruti from '../assets/projects/optimize/shruti.svg';
@@ -145,26 +145,26 @@ export default function DMRC(props) {
                 <div className="mx-auto sm:w-3/4 w-full">
                     <img src={banner} alt="" />
                     <div className="flex sm:flex-row flex-col justify-between items-center">
-                        <div className="flex flex-col space-y-16">
+                        <div className="flex flex-col space-y-16 sm:w-1/2">
                             <HifiText text="Optimized route suggestions incorporating last-mile connectivity." />
                             <HifiText text="Complete route description including time, cost, interchanges, and destinations on the go." />
                         </div>
-                        <img src={search1} alt="" />
+                        <img src={search1} alt="" className='sm:w-1/2' />
                     </div>
                     <div className="flex sm:flex-row flex-col justify-between items-center">
-                        <img src={search2} alt="" />
-                        <div className="flex flex-col space-y-16">
+                        <img src={search2} alt="" className='sm:w-1/2'/>
+                        <div className="flex flex-col space-y-16 sm:w-1/2">
                             <HifiText text="Add or remove stops to incorporate detours." />
                         </div>
                     </div>
                 </div>
 
                 <div className="flex sm:flex-row flex-col justify-between items-center">
-                    <div className="flex flex-col">
+                    <div className="flex flex-col sm:w-1/3">
                         <HifiHead text="Menu" />
                         <HifiText text="An intuitive menu which puts all your information in one place." />
                     </div>
-                    <img src={menu} alt="" />
+                    <img src={menu} alt="" className='sm:w-2/3' />
                 </div>
 
                 <div className="flex sm:flex-row flex-col justify-between items-center">
@@ -185,23 +185,23 @@ export default function DMRC(props) {
                             <HifiText text="Additional information about facilities like toilets, elevators, etc." />
                         </div>
                     </div>
-                    <img src={stationInfo} alt="" />
+                    <img src={stationInfo} alt="" className='sm:w-1/3' />
                 </div>
 
                 <div className="flex sm:flex-row flex-col justify-between items-center">
-                    <img src={metroMap} alt="" />
+                    <img src={metroMap} alt="" className="w-1/3" />
                     <div className="flex flex-col">
                         <HifiHead text="METRO MAP" />
                         <HifiText text="Easily navigable map of the entire Delhi Metro network." />
                     </div>
                 </div>
 
-                <div className="flex sm:flex-row flex-col justify-between items-center">
-                    <div className="flex flex-col">
+                <div className="flex sm:flex-row flex-col justify-between items-center sm:my-64">
+                    <img src={recharge} alt="" className='sm:w-1/2 sm:absolute sm:right-64' />
+                    <div className="flex flex-col sm:relative z-50">
                         <HifiHead text="METRO CARD RECHARGE" />
                         <HifiText text="Hassle-free online recharge for your metro card." />
                     </div>
-                    <img src={recharge} alt="" />
                 </div>
                 <Heading text="Learnings and Takeaways" />
                 <Information text="While trying to enhance the user experience of a product or an app, it is important to consider expanding the scope at times to not just the in-app experience but to the entire service. Our detailed research into finding pain points of the app users led us to discover certain key issues with traveling in the Delhi Metro in general. This drove us towards focusing on the last-mile connectivity problem. Just providing simple information about the transportation available at the station exit gates made people feel much more confident about using that particular station or the metro in general, especially when traveling to new locations." />
@@ -228,7 +228,7 @@ function HifiHead(props) {
 
 function HifiText(props) {
     return (
-        <p className="text-black text-opacity-50 leading-loose">{props.text}</p>
+        <p className="text-black text-opacity-50 leading-10">{props.text}</p>
     )
 }
 

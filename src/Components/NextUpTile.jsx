@@ -6,11 +6,11 @@ export function NextUpTile(props) {
             <Link to={{
                 pathname: "/" + props.id,
             }}>
-                <div className={`flex sm:flex-row flex-col sm:h-40 h-32 items-center justify-start my-6 bg-${props.color} hover:scale-105 transform-gpu ease-in-out duration-200 transition`}>
-                    <img src={props.image} className="w-36" alt="" srcset="" />
-                    <div className="">
+                <div className={`flex sm:flex-row flex-col items-center justify-start sm:my-6 hover:scale-105 transform-gpu ease-in-out duration-200 transition`}>
+                    <img src={props.image} className="w-full" alt="" srcset="" />
+                    {/* <div className="w-3-5">
                         <p className="text-xl font-bold">{props.title}</p>
-                    </div>
+                    </div> */}
                 </div>
             </Link>
         </div>

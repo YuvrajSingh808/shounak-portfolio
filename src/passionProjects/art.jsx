@@ -44,14 +44,14 @@ export default function Art() {
                     <img src={art4} alt="" className="row-span-3" />
                     <img src={art5} alt="" className="row-span-2" />
                 </div>
-                <div className="grid grid-rows-4 sm:grid-cols-3 grid-cols-1 sm:gap-x-4 gap-y-4 my-8">
-                    <img src={art6} alt="" className="row-span-2 col-span-3 h-full" />
+                <img src={art6} alt="" className="w-full" />
+                <div className="grid grid-rows-4 sm:grid-rows-2 sm:grid-cols-3 grid-cols-1 sm:gap-x-4 gap-y-4 my-8">
                     <img src={art7} alt="" className="row-span-1 col-span-1" />
                     <img src={art8} alt="" className="row-span-2 col-span-2 w-full" />
                     <img src={art9} alt="" className="row-span-1 col-span-1 h-full" />
                 </div>
                 <SubHeading text="3D ART" textColor="text-white" />
-                <div className="grid grid-rows-3 sm:grid-cols-2 gap-y-8">
+                <div className="grid grid-rows-3 sm:grid-cols-2 gap-y-8 gap-x-16">
                     <img src={d1} alt="" className="sm:col-span-2" />
                     <img src={d2} alt="" />
                     <img src={d3} alt="" />
@@ -59,14 +59,22 @@ export default function Art() {
                     <img src={d5} alt="" />
                 </div>
                 <SubHeading text="sketching and painting" textColor="text-white" />
-                <div className="grid grid-rows-4 sm:grid-cols-2 grid-cols-1">
-                    <img src={sketch1} alt="" />
-                    <img src={sketch2} alt="" />
-                    <img src={sketch3} alt="" />
-                    <img src={sketch4} alt="" />
-                    <img src={sketch5} alt="" className="sm:col-span-2" />
-                    <img src={sketch6} alt="" />
-                    <img src={sketch7} alt="" />
+                <div className="flex space-x-8 w-full my-8">
+                    <div className="flex flex-col h-full justify-between space-y-8 w-1/2">
+
+                        <img src={sketch1} alt="" />
+                        <img src={sketch3} alt="" />
+                    </div>
+                    <div className="flex flex-col justify-between h-full space-y-8 w-1/2">
+                        <img src={sketch2} alt="" />
+                        <img src={sketch4} alt="" />
+
+                    </div>
+                </div>
+                <div className="grid grid-rows-2 sm:grid-cols-2 grid-cols-1 w-full">
+                    <img src={sketch5} alt="" className="sm:col-span-2 w-full" />
+                    <img src={sketch6} alt="" className="w-full pr-4" />
+                    <img src={sketch7} alt="" className="w-full pl-4" />
                 </div>
             </div>
         </>

@@ -17,8 +17,8 @@ import ds3 from '../assets/projects/rangde/ds3.png';
 import ds4 from '../assets/projects/rangde/ds4.png';
 import ideation from '../assets/projects/rangde/ideation.png';
 import prototyping from '../assets/projects/rangde/prototyping.png';
-import dmrc from '../assets/projects/dmrc/dmrc.png';
-import storeinstore from '../assets/projects/storeinstore/storeInStore.png';
+import dmrc from '../assets/projects/dmrc/dmrcNextUp.png';
+import storeinstore from '../assets/projects/storeinstore/StoreInStoreNextUp.png';
 import icon from '../assets/projects/rangde/icon.svg';
 import { useEffect } from 'react';
 import { Heading } from '../Components/Heading';
@@ -28,6 +28,7 @@ import { ListElement } from '../Components/ListElement';
 import { NextUpTile } from '../Components/NextUpTile';
 import { ProjectBrief } from '../Components/ProjectBrief';
 import Navbar from '../Components/navbar';
+import { BsArrowRight } from 'react-icons/bs';
 
 export default function RangDe() {
     useEffect(() => {
@@ -42,18 +43,15 @@ export default function RangDe() {
                     <img src={banner} className="w-full" alt="" srcset="" />
                 </div>
             </div>
-            <ProjectBrief projectName="Rang De" icon={icon} paragraph1="Rang De is India’s first peer-to-peer social investment platform, that aims to provide loans to the millions of Indians who either cannot afford or are denied credit by the banks. By tapping into the power of many, and decentralising the source of funds, the mission is to significantly reduce interest rates on loans." paragraph2="I joined Rang De as UX Designer to give enhance the app and web platforms and soon took a lead role in shaping the future of this product on the digital front." timeline="September 2021 - Ongoing" roles={['User Experience Designer', 'User Researcher', 'Interaction Designer', 'UI and Visual Designer']} team={['Product Managers (App + Web)', 'Software Development-Engineers', 'Associate UI Designer', 'Me' ]} totalMembers={4} buttonComponent={<button className="px-8 bg-projectPurple text-black py-1.5 rounded-lg transform hover:scale-105">
-                    Website
-                </button>} />
+            <ProjectBrief projectName="Rang De" icon={icon} paragraph1="Rang De is India’s first peer-to-peer social investment platform, that aims to provide loans to the millions of Indians who either cannot afford or are denied credit by the banks. By tapping into the power of many, and decentralising the source of funds, the mission is to significantly reduce interest rates on loans." paragraph2="I joined Rang De as UX Designer to give enhance the app and web platforms and soon took a lead role in shaping the future of this product on the digital front." timeline="September 2021 - Ongoing" roles={['User Experience Designer', 'User Researcher', 'Interaction Designer', 'UI and Visual Designer']} team={['Product Managers (App + Web)', 'Software Development-Engineers', 'Associate UI Designer', 'Me' ]} totalMembers={4} buttonComponent={<a href="https://rangde.in/" target="_blank"> <button className="px-8 flex space-x-2 items-center bg-projectPurple text-black py-1.5 rounded-lg transform hover:scale-105">
+                    <p>Website</p>
+                    <BsArrowRight />
+                </button></a>} />
             <div className="mx-15p">
                 <SubHeading text="More about my role" />
-                <p className="leading-loose mb-8">
-                    When I became a part of Rang De, the product, especially the app was undergoing major upscaling, redesign and rebranding. The job was as demanding as it was thrilling and fulfilling.
-                    I underwent serious professional growth and expanded my skillset to share tasks of the Product Manager and Graphic Designer as well. I worked alongside several software developers, two Product Managers, a UI Designer, and the Growth and Engagement team.<p />
-                </p>
-                <p>
-                    During my time at Rang De till now I have sucessfully implemented several important projects and tasks such as -
-                </p>
+                <Information text="When I became a part of Rang De, the product, especially the app was undergoing major upscaling, redesign and rebranding. The job was as demanding as it was thrilling and fulfilling.
+                    I underwent serious professional growth and expanded my skillset to share tasks of the Product Manager and Graphic Designer as well. I worked alongside several software developers, two Product Managers, a UI Designer, and the Growth and Engagement team." />
+                <Information text="During my time at Rang De till now I have sucessfully implemented several important projects and tasks such as -" />
 
                 <ListElement title="Set up a proper design pipeline and process." information=" Before this, the company had to resort to external design agencies for the web and app designs. I was able to establish a solid structure and transparency among everyone involved in the product. This helped create a sense of direction and a better understanding between SDEs, PMs and Designers." />
 
@@ -62,7 +60,7 @@ export default function RangDe() {
                 <ListElement title="Establishing a design system. " information="This primarily helped improving the product’s visual and interactive consistency across the website and the app, while also reducing the time spent on design and development at later stages. " />
 
                 <SubHeading text="The design process" />
-                <p className="leading-loose">At Rang De, we follow a <span className="font-bold" >modified Design Sprint</span> to address already existing issues and for the addition of innovative new experiences and interactions to enhance user experience. Our Design Sprints last for 1-2 weeks, which is longer than the typical 5-day sprint in order to put additional efforts into user research and testing prototypes. The sprints are conducted by the Sprint planners that are usually me and the product manager.  The steps involved in the process are -</p>
+                <p className="leading-10">At Rang De, we follow a <span className="font-bold" >modified Design Sprint</span> to address already existing issues and for the addition of innovative new experiences and interactions to enhance user experience. Our Design Sprints last for 1-2 weeks, which is longer than the typical 5-day sprint in order to put additional efforts into user research and testing prototypes. The sprints are conducted by the Sprint planners that are usually me and the product manager.  The steps involved in the process are -</p>
 
                 <ListElement title="Alignment." information=" In this step, we discuss our issues, pain points, and reviews from our users that have been gathered since the release of the previous features. We then converge on one or more Sprint Questions that represent the problems that we try to solve using empathy mapping.  " />
                 <img src={alignment} alt="" className="w-full my-8" />
@@ -88,15 +86,13 @@ export default function RangDe() {
                 <Heading text="New Welcome Experience" />
                 <SubHeading text="ONBOARDING" />
                 <Information text="From analyzing user interviews, it was inferred that users are more likely to support and invest in social causes that align with their interests. A change in the onboarding approach of new users was required where they would be asked to choose their interests among a set of areas and the profiles that were shown to these users would be based on their interests. This was also done for the existing users in the form of a pop-up questionnaire. " />
-                <img src={onboarding} alt="" className="mx-auto" />
+                <img src={onboarding} alt="" className="mx-auto sm:w-1/3 my-8" />
 
                 <SubHeading text="KYC Verification Flow" />
                 <Information text="Since Rang De is essentially an investment platform, it has to abide by the Government’s financial regulations, Know Your Customer Verification is, therefore, a mandatory process. However, testing proved that the cumbersome and time taking verification caused a high dropout rate. A simple and more intuitive flow was thus designed to make onboarding fast. " />
             </div>
             <div className="flex w-full justify-between flex-wrap mx-auto my-8">
                 <img src={kyc1} alt="" />
-                <img src={kyc2} alt="" />
-                <img src={kyc3} alt="" />
             </div>
             <div className="mx-15p">
                 <Heading text="Investment Flow Redesign" />
@@ -104,9 +100,6 @@ export default function RangDe() {
                 <Information text="One of the major challenges for the platform was to be able to display the information about the individual investees in a concise yet informative manner while providing a quick method to invest. " />
                 <div className="flex w-full justify-between flex-wrap mx-auto my-8 sm:space-y-0 space-y-8">
                     <img src={card1} alt="" />
-                    <img src={card2} alt="" />
-                    <img src={card3} alt="" />
-                    <img src={card4} alt="" />
                 </div>
 
                 <Information text="A simple card-based display system worked best for the users as it resembled the typical items display for an online shopping website. " />
@@ -144,7 +137,7 @@ export default function RangDe() {
             <div className="bg-black px-15p py-16 mt-16">
 
                 <p className="text-white text-base mb-14 text-opacity-60 uppercase">next up</p>
-                <div className="flex justify-between sm:space-x-4 sm:flex-row flex-col">
+                <div className="flex justify-between sm:space-x-4 sm:flex-row flex-col sm:space-y-0 space-y-4">
                     <NextUpTile id="storeinstore" title="Store in Store" subtitle="Redesigning the existing DMRC app experience" image={storeinstore} color="projectOrange" />
                     <NextUpTile id="dmrc" title="DMRC App Revamp" subtitle="Redesigning the existing DMRC app experience" image={dmrc} color="projectWhite" />
                 </div>

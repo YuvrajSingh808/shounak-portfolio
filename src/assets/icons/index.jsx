@@ -1,7 +1,7 @@
-import Behance from './Behance.svg';
-import Email from './Email.svg';
-import Linkedin from './Linkedin.svg';
-import Insta from './Insta.svg';
+import Behance from './Behance.png';
+import Email from './Email.png';
+import Linkedin from './Linkedin.png';
+import Insta from './Insta.png';
 
 export {
     Behance,

@@ -11,16 +11,14 @@ import typography from '../assets/projects/optimize/typography.png';
 import login from '../assets/projects/optimize/login.png';
 import onboarding from '../assets/projects/optimize/onboarding.png';
 import feed1 from '../assets/projects/optimize/feed1.png';
-import feed2 from '../assets/projects/optimize/feed2.png';
 import notification1 from '../assets/projects/optimize/notification1.png';
-import notification2 from '../assets/projects/optimize/notification2.png';
-import todo from '../assets/projects/optimize/todo.png';
+import todo from '../assets/projects/optimize/todo.gif';
 import home from '../assets/projects/optimize/home.png';
 import home2 from '../assets/projects/optimize/home2.png';
 import home3 from '../assets/projects/optimize/home3.png';
 import profile from '../assets/projects/optimize/profile.png';
-import statistics from '../assets/projects/optimize/statistics.png';
-import explore from '../assets/projects/optimize/explore.png';
+import statistics from '../assets/projects/optimize/statistics.gif';
+import explore from '../assets/projects/optimize/explore.gif';
 import designProcess from '../assets/projects/optimize/designProcess.svg';
 import tarun from '../assets/projects/optimize/tarun.svg';
 import shruti from '../assets/projects/optimize/shruti.svg';
@@ -50,8 +48,8 @@ export default function Optimize() {
     return (
         <div>
             <Navbar />
-            <div className={`h-screen w-full bg-projectBlue flex justify-center sm:items-end items-center`}>
-                <div className="sm:w-3/5">
+            <div className={`h-screen w-full bg-projectBlue flex justify-center items-center`}>
+                <div className="sm:w-3/5 mt-8">
                     <img src={banner} className="w-2/3 mx-auto" alt="" srcset="" />
                 </div>
             </div>
@@ -104,7 +102,7 @@ export default function Optimize() {
                     PAIN POINTS
                 </p>
                 <ListElement information="Students find it hard to keep track of what all they had planned to do." />
-                <ListElement information="Some make a time table in their diaries, most use a standard “note taking” app. Either option is not very convinient as diaries need to flipping pages regularly while the notes app doesnt provide enough features like allocated time, calendar and checklists. " />
+                <ListElement information="Some make a time table in their diaries, most use a standard “note taking” app. Either option is not very convenient as using diaries involve flipping pages regularly while the notes app doesn't provide enough features like allocated time, calendar and checklists." />
                 <ListElement information="Most students are addicted to social media apps and knowingly waste time scrrolling due to a force of habit." />
                 <ListElement information="There are a lot of productive acitivities they want//plan to do, but find it extremely overwhelming to choose among so many different websites and courses." />
             </div>
@@ -113,7 +111,7 @@ export default function Optimize() {
                 <Information text="How can we create a system that can serve as a means of mindful and productive use of time for users enabling them to manage hectic schedules while developing skills and pursuing interests/hobbies?" />
 
                 <SubHeading text="FEATURES IDENTIFIED" />
-                <p className="leading-loose">
+                <p className="leading-10">
                     Following the interviews, the pain points of the users were prioritized using <span className="font-bold">DOT VOTING</span> and each of these pains was tackled by a feature that would potentially solve the issue.
                 </p>
                 <Feature icon={<BiNotepad />} boldText="To-do lists" text=" to keep track of pending work, segregate into low and high-priority tasks." />
@@ -131,9 +129,9 @@ export default function Optimize() {
                 <Feature icon={<FiUsers />} boldText="Community Engagement" text=" to motivate users and create healthy competition." />
 
                 <Feature icon={<FiAward />} boldText="Abstract Rewards system" text=" that acts as a catalyst and keeps you motivated to finish your tasks promptly. " />
-
+                <div className="py-4"></div>
                 <SubHeading text="PERSONAS AND SCENARIOS" />
-                <div className="flex sm:space-y-0 space-y-12 sm:space-x-16 sm:flex-row flex-col">
+                <div className="flex sm:space-y-0 space-y-12 sm:space-x-16 sm:flex-row flex-col py-16">
                     <Personas svg={tarun} name="Tarun" age="21" subtitle="The Lazy Scroller" list={['Spends most of his day scrolling on social media.', 'Knows that work is pilling up and feels guilty that he is wasting his precious time.', 'There is no one to keep a check on him.']} additionalInfo="Downloads the Optimize app, fills his to-do list, and syncs his calendar. The app notifies him for his excessive screen time and suggests completing pending work. He also sets a daily usage limit on Instagram." />
                     <Personas svg={shruti} name="Shruti" age="19" subtitle="Miss Undecisive" list={['Enthusiastic learner, plans to do several things.', 'But she can never decide on where to begin.', 'She ends up wasting the whole day thinking and ultimately doesn’t make any progress.']} additionalInfo="On the Optimize app, she chooses her interests and focus-areas. She can browse and choose from a repository of several courses, add it to her list. The app suggests which course would be optimal for her given the amount of time and mood with its cool feature - Opti-matic. What’s more? She earns XP with each new course completed to show off to her friends." />
                     <Personas svg={lisa} name="Lisa" age="25" subtitle="always overworked" list={['Has been facing too much pressure at her work.', 'Has no time for herself.', 'Recentlly got some time on her hands and wants to pursue some of her long forgotten hobbies. ']} additionalInfo="The Optimize app provides her with a list of recommended material based on her interests which she could complete in a short period of time. It also advises her to rest and suggests watching some videos on the importance of mental health, based on her rough schedule." />
@@ -186,11 +184,11 @@ export default function Optimize() {
             <div className="mx-15p">
                 <Heading text="The Design" />
                 <SubHeading text="COLOR PALETTE" />
-                <img src={colorPallete} alt="" srcset="" className="mx-auto" />
+                <img src={colorPallete} alt="" srcset="" className="mx-auto my-16" />
                 <SubHeading text="TYPOGRAPHY" />
-                <img src={typography} alt="" srcset="" className="mx-auto" />
+                <img src={typography} alt="" srcset="" className="mx-auto my-24" />
                 <SubHeading text="iconography" />
-                <img src={iconography} alt="" srcset="" className="mx-auto" />
+                <img src={iconography} alt="" srcset="" className="mx-auto my-16" />
                 <SubHeading text="HI-FIDELITY PROTOTYPE" />
                 <div className="flex sm:flex-row flex-col w-full sm:space-x-28 items-center">
                     <img src={login} alt="" srcset="" className="sm:w-1/2" />
@@ -224,9 +222,9 @@ export default function Optimize() {
                     </div>
                 </div>
                 <div className="flex sm:flex-row flex-col w-full sm:space-x-28 items-center justify-between">
-                    <div className="flex sm:flex-row flex-col sm:space-x-4">
+                    <div className="flex sm:flex-row flex-col sm:space-x-4 w-1/2">
                         <img src={feed1} alt="" srcset="" className="" />
-                        <img src={feed2} alt="" srcset="" className="" />
+                        {/* <img src={feed2} alt="" srcset="" className="" /> */}
                     </div>
                     <div className="sm:w-1/2">
                         <HifiText text="Switch between feed and recommended tabs to check out what your friends are up to while going through the specially curated content for you." />
@@ -267,8 +265,7 @@ export default function Optimize() {
                 </div>
                 <div className="flex sm:flex-row flex-col w-full sm:space-x-28 items-center justify-between">
                     <div className="flex sm:w-1/2">
-                        <img src={notification1} alt="" srcset="" className="w-1/2" />
-                        <img src={notification2} alt="" srcset="" className="w-1/2" />
+                        <img src={notification1} alt="" srcset="" className="" />
                     </div>
                     <div className="sm:w-1/2 sm:h-40 flex flex-col justify-between">
                         <HifiHead text="To-Do list" />
@@ -284,7 +281,7 @@ export default function Optimize() {
                 <Information text="It is easy to design and propose intelligent solutions but we often forget that a product needs to be viable and feasible also while being desirable. It is better to create a complete and usable product with vital functionality than to set unrealistic targets. " />
             </div>
 
-            <div className="bg-black px-15p py-16 mt-16">
+            <div className="bg-black px-15p py-16 mt-16 w-full justify-start flex flex-col">
                 <p className="text-white text-base mb-14 text-opacity-60 uppercase">next up</p>
                 <PassionProjectsTile />
             </div>
@@ -302,7 +299,7 @@ function HifiHead(props) {
 }
 function HifiText(props) {
     return (
-        <p className="text-black text-opacity-50 leading-loose">{props.text}</p>
+        <p className="text-black text-opacity-50 leading-10">{props.text}</p>
     )
 }
 

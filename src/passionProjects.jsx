@@ -12,9 +12,9 @@ export default function PassionProjects() {
         window.scrollTo(0, 0);
     }, []);
     function TabButton(props) {
-        var style = 'sm:py-2 py-1 sm:px-20 px-8 text-white sm:text-xl uppercase border rounded-lg hover:text-black hover:bg-white hover:font-bold transition duration-500';
+        var style = 'sm:py-4 py-1 sm:px-12 px-8 sm:w-80 w-60 text-white sm:text-xl uppercase border rounded-lg hover:text-black hover:bg-white hover:font-bold transition duration-500';
         if (props.isSelected) {
-            style = "sm:py-2 py-1 sm:px-20 px-8 sm:text-xl uppercase border rounded-lg text-black bg-white font-bold";
+            style = "sm:py-4 py-1 sm:px-12 px-8 sm:w-80 w-60 sm:text-xl uppercase border rounded-lg text-black bg-white font-bold";
         }
         return (
             <button className={style} onClick={() => { changeSelectedTab(props.id) }}>
@@ -25,8 +25,8 @@ export default function PassionProjects() {
     return (
         <div className="bg-black">
             <Navbar textColor="text-white " hoverColor="text-gray-300" selected="Passion Projects" />
-            <div className="text-white pt-32 pb-12">
-                <div className="flex sm:flex-row flex-col items-center space-y-4 sm:space-y-0 sm:justify-around py-4 sm:py-8 px-15p z-10 top-0 sticky bg-black">
+            <div className="text-white pt-12 sm:pt-32 pb-12">
+                <div className="flex sm:flex-row flex-col items-center space-y-4 sm:space-y-0 sm:justify-around py-4 sm:py-8 px-15p z-10 top-0 sm:sticky bg-black mt-20">
                     <TabButton text="Animation" id="Anime" isSelected={selectedTab === 'Anime'} />
                     <TabButton text="Game Dev" id="Game" isSelected={selectedTab === 'Game'} />
                     <TabButton text="ART & GRAPHICS" id="Art" isSelected={selectedTab === 'Art'} />
@@ -59,7 +59,7 @@ export default function PassionProjects() {
                                 </> :
                                 <>
                                     <Art />
-                                    <Link className="px-15p flex flex-row-reverse w-full" to={{pathname: '/'}}>
+                                    <Link className="px-15p flex flex-row-reverse w-full mt-8" to={{pathname: '/'}}>
                                         <div className="w-auto flex items-center justify-end sm:space-x-4 space-x-2 sm:text-2xl hover:text-gray-400">
                                             <p>Back to Home </p> <BsArrowRight />
                                         </div>

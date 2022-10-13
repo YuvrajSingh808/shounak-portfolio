@@ -151,7 +151,7 @@ export default function StoreInStore() {
 
                 <div className="w-full">
                     <div className="flex text-projectOrange space-x-4 items-center">
-                        <span className="font-bold uppercase text-projectOrange">Recommendations</span>
+                        <span className="font-bold uppercase text-projectOrange">Place order</span>
                         <div className="text-xl"><FaShoppingCart /></div>
                     </div>
                     <img src={hifi5} className="w-full my-8" alt="" srcset=" " />

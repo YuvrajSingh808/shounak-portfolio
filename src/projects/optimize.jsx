@@ -268,7 +268,7 @@ export default function Optimize() {
                         <img src={notification1} alt="" srcset="" className="" />
                     </div>
                     <div className="sm:w-1/2 sm:h-40 flex flex-col justify-between">
-                        <HifiHead text="To-Do list" />
+                        <HifiHead text="Notifications" />
                         <HifiText text="Set tasks as urgent or trivial." />
                         <HifiText text="Sync your Google calendar with one tap and add it to your to-do list." />
                     </div>

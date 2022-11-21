@@ -6,19 +6,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'projectPurple': '#C3A8F7',
-        'projectOrange': '#FF902A',
-        'projectWhite': '#EEF2F5',
-        'projectRed': '#DF0000',
-        'projectBlue': '#39D6D7',
-        'customGrey': '#1C1C1C',
+        'identityBlue': '#2F80ED',
+        'primaryDark': '#333333',
+        'primaryGray': '#A5A5A5',
+        'secondaryGray': '#D4D4D4',
+        'tertiaryGray': '#F3F3F3',
       },
       spacing: {
         '10p': '10%',
         '15p': '15.28%',
       },
       fontFamily: {
-        'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
+        'sans': ['"Work Sans"', ...defaultTheme.fontFamily.sans],
       },
       fontWeight: ['hover', 'focus'],
     },

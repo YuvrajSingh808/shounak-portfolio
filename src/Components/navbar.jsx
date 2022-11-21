@@ -1,4 +1,4 @@
-import sgLogo from '../assets/sgLogo.svg';
+import sgLogo from '../assets/logos/Base_logo_dark.svg';
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { BiMenu } from 'react-icons/bi';
@@ -68,9 +68,6 @@ export default function Navbar(props) {
     }
     return (
         <>
-            <Link to={{pathname: '/'}} >
-                <img src={sgLogo} alt="" className="fixed z-50 ml-10p mt-6" />
-            </Link>
             <div className={props.textColor + " flex flex-col sm:flex-row justify-between px-10p pt-6 sm:mx-auto sm:justify-end sm:items-center z-10 w-full" + (navbarOpen ? '' : ' absolute')}>
                 <button
                     className="self-end cursor-pointer text-3xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
